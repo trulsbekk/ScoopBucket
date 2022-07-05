@@ -3,7 +3,7 @@
     "description": "Password management solutions for individuals, teams, and business organizations",
     "homepage": "https://bitwarden.com",
     "license": "GPL-3.0-or-later",
-	"url": "https://github.com/bitwarden/clients/releases/download/desktop-v2022.6.0/Bitwarden-Portable-2022.6.0.exe"
+	"url": "https://github.com/bitwarden/clients/releases/download/desktop-v2022.6.0/Bitwarden-Portable-2022.6.0.exe",
 	"hash": "8C553BD2A599A5F4028D4E1BEB0BA1537C5042F3CB8D209A31560745818CE32F",
 
     "pre_install": [
