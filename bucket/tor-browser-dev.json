@@ -7,11 +7,11 @@
     "architecture": {
         "64bit": {
             "url": "https://dist.torproject.org/torbrowser/12.0a5/torbrowser-install-win64-12.0a5_ALL.exe",
-            "hash": "FDCE0075711739E8368AFAF6900765B451D7CBFD623B215C9448C61262E8B04A"
+            "hash": "fdce0075711739e8368afaf6900765b451d7cbfd623b215c9448c61262e8b04a"
         },
         "32bit": {
             "url": "https://dist.torproject.org/torbrowser/12.0a5/torbrowser-install-12.0a5_ALL.exe",
-            "hash": "26AFF638C884957B2476D856A401B9B9D7EEB6050CB7A07AF7FB54182788ED68"
+            "hash": "26aff638c884957b2476d856a401b9b9d7eeb6050cb7a07af7fb54182788ed68"
         }
     },
     "installer": {
@@ -20,14 +20,14 @@
             "movedir \"$dir\\Browser\" \"$dir\" | Out-Null",
             "Remove-Item \"$dir\\$fname\", \"$dir\\*.lnk\" -Force",
             "# Persisting profile breaks Tor-Launcher and makes it fallback to config files in Tor folder: move them there",
-            "movedir \"$dir\\TorBrowser-dev\\Data\\Tor\" \"$dir\\TorBrowser-dev\\Tor\" | Out-Null",
+            "movedir \"$dir\\TorBrowser\\Data\\Tor\" \"$dir\\TorBrowser\\Tor\" | Out-Null",
             "# Update extensions in persisted profile",
-            "movedir \"$dir\\TorBrowser-dev\\Data\\Browser\\profile.default\" \"$persist_dir\\TorBrowser-dev\\Data\\Browser\\profile.default\" | Out-Null"
+            "movedir \"$dir\\TorBrowser\\Data\\Browser\\profile.default\" \"$persist_dir\\TorBrowser\\Data\\Browser\\profile.default\" | Out-Null"
         ]
     },
     "persist": [
-        "TorBrowser-dev\\Data\\Browser\\profile.default",
-        "TorBrowser-dev\\Tor\\torrc"
+        "TorBrowser\\Data\\Browser\\profile.default",
+        "TorBrowser\\Tor\\torrc"
     ],
     "bin": [
         [
@@ -38,7 +38,7 @@
     "shortcuts": [
         [
             "firefox.exe",
-            "Tor Browser-dev"
+            "Tor Browser"
         ]
     ],
     "checkver": {
